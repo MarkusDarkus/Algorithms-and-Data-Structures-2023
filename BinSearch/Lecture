@@ -1,0 +1,11 @@
+ai <= ai+1
+ai = x 
+i =?
+a = [3, 5 ,8, 13, 18, 19, 21, 27, 32] - sorted array
+x=13
+
+1) take median = left + right /2
+2) if a[m] bigger than x : we take new right board : right = m
+3) elif a[m] smaller than x : we take new left board : left = m
+4) else: mean that we find our x : return m - index element of array who = x
+
