@@ -1,0 +1,35 @@
+a: ai<=ai+1 - a - sorted array
+int x
+We want : to find max i : ai<=x or min i: ai>=x
+Example:
+
+a = [3,5,10,11,13,18,26,27,31]
+x = 20
+
+1)We take two powinter: left and right
+
+l , r :  al <= x ,  ar >= x
+
+2) we have extreme case: [0] and [n-1] indexes : so let's take:
+l = -1
+r = n
+
+3) take median element: 
+m=(l+r)/2
+m=4
+
+4) if a[m]<=x:   l=m
+   else if a[m]>x:   r=m
+
+5) we will stop when r = l + 1
+
+6) we found indexes of elements that bigger and smaller than x
+
+7) max i : ai<=x ----> return l
+   min i: ai>=x -----> return r
+
+
+!!!!!!EXTREME CASES!!!!!
+all ai > x => l=-1
+all ai < x => r=n-1
+    
